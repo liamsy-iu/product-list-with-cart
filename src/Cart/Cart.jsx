@@ -3,10 +3,8 @@ import styles from "./Cart.module.css";
 import Modal from "../Modal/Modal";
 import classes from "../Modal/Modal.module.css";
 
-const Cart = ({ items, onRemoveItem }) => {
+const Cart = ({ items, setItems, onRemoveItem }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  console.log(items);
 
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
   const orderTotal = items.reduce(
@@ -108,7 +106,6 @@ const Cart = ({ items, onRemoveItem }) => {
               </div>
             </div>
 
-            {/* Items Section */}
             <div className={classes.modalItemsSection}>
               {items.map(({ category, name, quantity, price, image }) => (
                 <div key={category}>
@@ -133,17 +130,18 @@ const Cart = ({ items, onRemoveItem }) => {
                 </div>
               ))}
 
-              {/* Order Total */}
               <div className={classes.modalOrderTotal}>
                 <p>Order Total</p>
                 <p className={classes.totalAmt}>${orderTotal.toFixed(2)}</p>
               </div>
             </div>
 
-            {/* Button */}
             <button
               className={classes.modalButton}
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => {
+                setItems([]);
+                setIsModalOpen(false);
+              }}
             >
               Start New Order
             </button>

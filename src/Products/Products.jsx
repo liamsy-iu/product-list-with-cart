@@ -44,7 +44,7 @@ const Products = () => {
           />
         ))}
       </section>
-      <Cart items={items} onRemoveItem={onRemoveItem} />
+      <Cart items={items} setItems={setItems} onRemoveItem={onRemoveItem} />
     </div>
   );
 };
