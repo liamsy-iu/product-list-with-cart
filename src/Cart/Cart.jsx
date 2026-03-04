@@ -17,7 +17,6 @@ const Cart = ({ items, setItems, onRemoveItem }) => {
   };
 
   function openModal() {
-    console.log("Button clicked!");
     setIsModalOpen(true);
   }
 
