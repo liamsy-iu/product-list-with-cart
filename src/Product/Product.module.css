@@ -1,0 +1,88 @@
+p,
+.cart img {
+  margin: 0;
+}
+
+h1 {
+  padding: var(--padding);
+}
+
+.card {
+  padding: var(--padding);
+}
+
+div.cardImage {
+  position: relative;
+}
+
+.thumbnail {
+  max-height: 212px;
+  object-fit: cover;
+}
+
+.imgWrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  max-width: 160px;
+  border: 1px solid var(--rose-400);
+  border-radius: calc(var(--radius) * 5);
+  background-color: var(--rose-50);
+
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  margin-top: -30px;
+}
+.button {
+  color: var(--rose-900);
+  font-weight: var(--semi-bold);
+}
+.category {
+  color: var(--rose-500);
+}
+.subcategory,
+.price {
+  color: var(--rose-900);
+  font-weight: var(--bold);
+}
+
+.price {
+  color: var(--red);
+}
+
+.dessertInfo {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.dessertInfo p {
+  padding: 4px 0;
+}
+
+/* @media (min-width: 480px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart {
+    left: 20px;
+  }
+} */

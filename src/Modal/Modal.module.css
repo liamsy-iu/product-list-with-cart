@@ -1,0 +1,200 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalCart {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 24px 24px;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 640px) {
+  .modalBackdrop {
+    align-items: center;
+  }
+
+  .modalCart {
+    border-radius: 12px;
+    max-width: 592px;
+    padding: 40px;
+    max-height: none;
+  }
+}
+
+.modalTitleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modalCheckmark {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalCheckmark img {
+  width: 100%;
+  height: 100%;
+}
+
+.modalTextSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modalTitle {
+  font-size: 40px;
+  font-weight: var(--bold);
+  color: var(--rose-900);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.modalSubtitle {
+  font-size: 16px;
+  color: var(--rose-500);
+  margin: 0;
+  font-weight: 400;
+}
+
+.modalItemsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: var(--rose-50);
+  border-radius: 8px;
+}
+
+.modalItemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.modalItemLeft {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+}
+
+.modalItemImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modalItemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.modalItemName {
+  font-size: 14px;
+  font-weight: var(--semi-bold);
+  color: var(--rose-900);
+  margin: 0;
+}
+
+.modalItemPrice {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.modalItemPrice p {
+  margin: 0;
+}
+
+.modalItemPrice p:first-child {
+  color: var(--red);
+  font-weight: var(--semi-bold);
+}
+
+.modalItemPrice p:last-child {
+  color: var(--rose-500);
+}
+
+.modalItemTotal {
+  font-size: 16px;
+  font-weight: var(--semi-bold);
+  color: var(--rose-900);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.modalSeparator {
+  height: 1px;
+  background: var(--rose-100);
+  width: 100%;
+}
+
+.modalOrderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.modalOrderTotal p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--rose-900);
+}
+
+.modalOrderTotal .totalAmt {
+  font-size: 24px;
+  font-weight: var(--bold);
+  color: var(--rose-900);
+}
+
+.modalButton {
+  padding: 16px 24px;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: var(--semi-bold);
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.modalButton:hover {
+  opacity: 0.9;
+}

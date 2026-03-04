@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(550px, 100%), 1fr));
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}

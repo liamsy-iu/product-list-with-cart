@@ -1,0 +1,35 @@
+{
+  "name": "product-list-with-cart-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product list with cart coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.59.7",
+    "@tanstack/react-query-devtools": "^5.59.13",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "gh-pages": "^6.3.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.59.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
