@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <h1>Desserts</h1>
+      <h1 className="cartTitle">Desserts</h1>
       <Products />
     </QueryClientProvider>
   );
